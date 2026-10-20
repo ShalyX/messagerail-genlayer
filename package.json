@@ -1,0 +1,14 @@
+{
+  "name": "messagerail-genlayer-contract",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A replay-safe acknowledgement protocol for asynchronous GenLayer IC messages.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "python -m pytest -p no:cacheprovider tests/direct tests/integration -q",
+    "lint": "python -m genvm_linter.cli check --json contracts/message_rail.py",
+    "validate": "python -m genvm_linter.cli check --json examples/idempotent_worker.py",
+    "validate:adversarial": "python -m genvm_linter.cli check --json examples/adversarial_ack_worker.py"
+  }
+}

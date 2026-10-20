@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+artifacts/
+node_modules/
+*.pyc
+.coverage
+.mypy_cache/
+.ruff_cache/
+/docs/production-plan.md
